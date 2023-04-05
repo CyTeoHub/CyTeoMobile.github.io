@@ -1,4 +1,27 @@
 body {
   background: #1D2B64;
   background: linear-gradient(to right, #F8CDDA, #1D2B64);
+  color: #ffffff;
+}
+
+.temporary {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-top: 3%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.caps {
+  color: #ffffff;
+}
+.caps:hover {
+  color: yellow;
 }/*# sourceMappingURL=main.css.map */
