@@ -1,7 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Anuphan:wght@300&display=swap");
 body {
-  background: #1D2B64;
-  background: linear-gradient(to right, #F8CDDA, #1D2B64);
-  color: #ffffff;
+  background: #ff6e7f;
+  background: linear-gradient(to right, #bfe9ff, #ff6e7f);
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 .temporary {
@@ -20,8 +24,58 @@ a {
 }
 
 .caps {
-  color: #ffffff;
+  color: #454545;
 }
 .caps:hover {
-  color: yellow;
+  color: #1A5F7A;
+  font-weight: bold;
+}
+
+.title {
+  text-align: center;
+  font-family: "Anuphan", sans-serif;
+  padding: 30px;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(6.5px);
+  -webkit-backdrop-filter: blur(6.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 300px;
+  height: 390px;
+  overflow-y: scroll;
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.glass-container {
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.glass::-webkit-scrollbar {
+  display: none;
+}
+
+.caps-glass {
+  font-size: 12px;
+}
+
+.icon-img {
+  height: 40px;
+  width: 40px;
+  border-radius: 10px;
 }/*# sourceMappingURL=main.css.map */

@@ -1,11 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@300&display=swap')
+    
 $primary-color: #ffffff
 $secondary-color: yellow  
+$gray_1: #454545
+$green_1:#1A5F7A
+
+$font_primary:'Anuphan', sans-serif
+
+@mixin titleStyle
+  font-family: $font_primary
+  padding:30px
+
+@mixin Aligncenter
+  display: flex
+  gap:10px
+  flex-direction: row
+  flex-wrap: wrap
+  align-items: center
+  text-align: center
+  justify-content: center
+
+@mixin  iconImg 
+    height:40px
+    width:40px
+    border-radius: 10px
     
 body
-    background: #1D2B64
-    background: -webkit-linear-gradient(to right, #F8CDDA, #1D2B64)
-    background: linear-gradient(to right, #F8CDDA, #1D2B64)
-    color:$primary-color
+    background: #ff6e7f
+    background: -webkit-linear-gradient(to right, #bfe9ff, #ff6e7f)
+    background: linear-gradient(to right, #bfe9ff, #ff6e7f)
+
+body::-webkit-scrollbar 
+    display: none
+
 
 .temporary
 
@@ -24,6 +51,36 @@ a
 
   
 .caps
-    color: $primary-color
+    color: $gray_1
     &:hover
-        color:$secondary-color
+        color:$green_1
+        font-weight: bold
+
+.title
+    text-align: center
+    @include titleStyle
+
+.glass
+    background: rgba( 255, 255, 255, 0.15 )
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 )
+    backdrop-filter: blur( 6.5px )
+    -webkit-backdrop-filter: blur( 6.5px )
+    border-radius: 10px
+    border: 1px solid rgba( 255, 255, 255, 0.18 )
+    width:300px
+    height:390px
+    overflow-y: scroll
+    @include Aligncenter
+
+.glass-container
+    @include Aligncenter
+
+
+.glass::-webkit-scrollbar 
+  display: none
+
+.caps-glass
+    font-size: 12px
+
+.icon-img
+    @include iconImg
